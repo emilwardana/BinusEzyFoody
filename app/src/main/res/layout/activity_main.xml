@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:text="by Muzammil Rabiawardana"
+            android:text="Saldo : IDR "
             android:textColor="@color/white"
             android:layout_marginTop="8dp"/>
         <Button

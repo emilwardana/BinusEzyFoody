@@ -2,16 +2,44 @@
     <string name="app_name">BinusEzyFoody</string>
 
     <string-array name="drinks">
-        <item>Air Mineral Rp123</item>
-        <item>Jus Alpukat Rp123</item>
-        <item>Jus Mangga Rp123</item>
-        <item>Jus Apel Rp123</item>
+        <item>Air Mineral Rp5.300</item>
+        <item>Jus Alpukat Rp12.000</item>
+        <item>Jus Mangga Rp9.000</item>
+        <item>Jus Apel Rp8.500</item>
     </string-array>
     <string-array name="description">
-        <item>Ini Deskripsinya</item>
-        <item>Ini Deskripsinya</item>
-        <item>Ini Deskripsinya</item>
-        <item>Ini Deskripsinya</item>
+        <item>Air Mineral 500 Ml</item>
+        <item>Jus Alpukat pakai es</item>
+        <item>Jus mangga harum manis</item>
+        <item>Jus Apple malang</item>
+    </string-array>
+
+    <string-array name="food">
+        <item>Bakso Rp15.000</item>
+        <item>Mie Instant Rp10.000</item>
+        <item>Nasi Goreng Rp20.000</item>
+        <item>Soto Ayam Rp17.000</item>
+    </string-array>
+    <string-array name="descriptionfood">
+        <item>Bakso Kuah lengkap</item>
+        <item>IMie Instal Rebus/Goreng</item>
+        <item>Nasi Goreng Komplit pakai telur/tidak</item>
+        <item>Soto Ayam Lengkap pakai Nasi</item>
+    </string-array>
+
+    <string-array name="snacks">
+        <item>Bakwan Rp2.500</item>
+        <item>Tempe Rp4.500</item>
+        <item>Lumpia Rp7.500</item>
+        <item>PopCorn Rp8.000</item>
+        <item>Lemper Rp8.000</item>
+    </string-array>
+    <string-array name="descriptionsnacks">
+        <item>Bakwan per porsi isi 3</item>
+        <item>Tempe per porsi isi 3</item>
+        <item>Lumpia per porsi isi 3a</item>
+        <item>PopCorn pilih rasa Manis/asin</item>
+        <item>Lemper isi ayam per porsi isi 3</item>
     </string-array>
     <string name="title_activity_nearby_restaurant">Map</string>
 </resources>
