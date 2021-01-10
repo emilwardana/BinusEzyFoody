@@ -12,8 +12,9 @@ import android.widget.Button;
 public class SnacksActivity extends AppCompatActivity {
     RecyclerView snacks_recycle;
     Button Myorder;
-    String s1[], s2[];
-    int images[] ={R.drawable.bakwan,R.drawable.tempe,R.drawable.lumpia,R.drawable.popcorn,R.drawable.lemper};
+    String[] s1;
+    String[] s2;
+    int[] images ={R.drawable.bakwan,R.drawable.tempe,R.drawable.lumpia,R.drawable.popcorn,R.drawable.lemper};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -16,10 +16,10 @@ public class TopupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_topup);
-        TextView JumlahlSaldo = (TextView) findViewById(R.id.saldoView);
-        kirimSaldo= (TextInputLayout) findViewById((R.id.setSaldo));
+        TextView JumlahlSaldo = findViewById(R.id.saldoView);
+        kirimSaldo= findViewById((R.id.setSaldo));
        // saldoAmount = kirimSaldo.getEditText().getText();
-        Button btn = (Button) findViewById(R.id.topupBtn);
+        Button btn = findViewById(R.id.topupBtn);
 
 //        btn.setOnClickListener(new View.OnClickListener() {
 //            @Override
