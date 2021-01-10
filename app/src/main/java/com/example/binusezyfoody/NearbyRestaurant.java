@@ -11,9 +11,18 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
 public class NearbyRestaurant extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    ArrayList<LatLng>arrayList = new ArrayList<LatLng>();
+    LatLng sydney = new LatLng(-34, 151);
+    LatLng storeAlsut = new LatLng(-6.230888, 106.658445);
+    LatLng storeJakbar = new LatLng(-6.191707, 106.782424);
+    LatLng storeJaksel = new LatLng(-6.283210, 106.796179);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +32,9 @@ public class NearbyRestaurant extends FragmentActivity implements OnMapReadyCall
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        arrayList.add(storeAlsut);
+        arrayList.add(storeJakbar);
+        arrayList.add(storeJaksel);
     }
 
     /**
@@ -39,8 +51,26 @@ public class NearbyRestaurant extends FragmentActivity implements OnMapReadyCall
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        Map<String, LatLng > storeName = new HashMap<>();
+       ArrayList<String> storeLoc = new ArrayList<>();
+
+       storeLoc.add("Alam Sutera");
+        storeLoc.add("Jakarta Barat");
+        storeLoc.add("Jakarta Selatan");
+
+
+
+           // storeName.put("Alsut", storeJakbar);
+           // storeName.put("Jakarta Barat", storeJakbar);
+           // storeName.put("Jakarta Selatan", storeJaksel);
+
+
+
+
+       for (int i=0;i<arrayList.size();i++){
+           mMap.addMarker(new MarkerOptions().position(arrayList.get(i)).title("Store "+storeLoc.get(i)));
+           mMap.animateCamera(CameraUpdateFactory.zoomTo(25));
+           mMap.moveCamera(CameraUpdateFactory.newLatLng(arrayList.get(i)));
+       }
     }
 }
